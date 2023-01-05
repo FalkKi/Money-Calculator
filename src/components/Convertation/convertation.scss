@@ -1,0 +1,33 @@
+.currency-container {
+   position: relative;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 15px;
+
+   p {
+      font-size: 40px;
+      font-weight: 700;
+      color: aliceblue;
+   }
+}
+
+.currency-list {
+   margin-top: 100px;
+
+   li {
+      height: 40px;
+      background-color: aliceblue;
+      color: rgb(16, 16, 73);
+      font-size: 40px;
+      font-weight: 700;
+      margin: 0 0 15px 0;
+      cursor: pointer;
+      transition: all 0.4s;
+      border-radius: 3px;
+      text-align: center;
+      align-items: center;
+      &:hover {
+         background-color: blueviolet;
+      }
+   }
+}

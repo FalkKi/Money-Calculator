@@ -1,0 +1,30 @@
+
+
+.category-img {
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+   background-color: aliceblue;
+   cursor: pointer;
+}
+
+.active {
+   transform: scale(1.2);
+}
+
+.category-list {
+   margin-top: 50px;
+   display: flex;
+
+   li {
+      margin-right: 15px;
+      text-transform: uppercase;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}
+
+.add-category {
+   margin-top: 50px;
+}

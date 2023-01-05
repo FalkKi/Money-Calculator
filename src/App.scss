@@ -1,0 +1,20 @@
+@import './nullstyle.scss';
+
+
+
+body {
+  background: url('./assets/backgr.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+  position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: bisque;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 10px;
+  margin: 0 auto;
+}

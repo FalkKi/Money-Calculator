@@ -1,0 +1,208 @@
+.income-diagramm {
+   margin-top: -210px;
+
+   canvas {
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: 600px;
+   }
+}
+
+.home-navigator {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   text-transform: uppercase;
+
+   div {
+      transition: all ease 0.4s;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 20px 20px 50px 0;
+      cursor: pointer;
+
+      &:hover {
+         color: aliceblue;
+      }
+
+   }
+}
+
+.income-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.income-amount {
+   font-size: 30px;
+   font-weight: 700;
+   color: aliceblue;
+}
+
+.add-income-btn {
+   margin-top: 50px;
+   transition: all ease 0.4s;
+   width: 200px;
+   height: 50px;
+   font-size: 18px;
+   font-weight: 700;
+   background-color: blueviolet;
+   color: aliceblue;
+   border-radius: 3px;
+
+   &:hover {
+      background-color: rgb(170, 110, 226);
+   }
+}
+
+.income-btn {
+   margin-top: 50px;
+   transition: all ease 0.4s;
+   width: 200px;
+   height: 50px;
+   font-size: 18px;
+   font-weight: 700;
+   color: rgb(22, 104, 175);
+   border-radius: 3px;
+
+   &:hover {
+      background-color: rgb(170, 110, 226);
+   }
+}
+
+.categories-list_income {
+   background: rgb(17, 17, 45);
+   padding: 5px;
+   margin-top: -130px;
+   width: 250px;
+   border-radius: 3px;
+   margin-bottom: 30px;
+   display: flex;
+   flex-direction: column;
+
+   li {
+      margin-bottom: 7px;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 700;
+      span{
+         color: aliceblue;
+      }
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+}
+
+.choose-income-category {
+   margin-top: 30px;
+   width: 600px;
+   margin-bottom: 30px;
+   display: flex;
+   flex-direction: column;
+
+   li {
+      margin-bottom: 40px;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+}
+
+.container {
+   background-color: rgb(51, 113, 132);
+   border-radius: 10px;
+   opacity: 0.9;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   font-size: 40px;
+   font-family: Orbitron;
+   letter-spacing: 7px;
+   text-align: center;
+}
+
+.money-inp {
+   height: 30px;
+   width: 200px;
+   border-radius: 3px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+.money-inp_error{
+   border: 1px solid red
+}
+.money-inp[type="number"]::-webkit-outer-spin-button,
+.money-inp[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+}
+
+.money-inp[type='number'],
+.money-inp[type="number"]:hover,
+.money-inp[type="number"]:focus {
+   appearance: none;
+   -moz-appearance: textfield;
+}
+
+.react-datepicker-wrapper {
+   position: fixed;
+   right: 0;
+   top: 0;
+   margin-top: 85px;
+}
+
+.money-inp {
+   margin-top: 30px;
+   padding: 10px;
+   border-radius: 4px;
+   color: rgb(3, 24, 24);
+   font-weight: 700;
+   font-size: 20px;
+}
+
+@media(max-width: 1100px) {
+   .income-diagramm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 50px;
+
+      canvas {
+         margin-left: auto;
+         margin-right: auto;
+         width: 500px;
+         height: 500px;
+      }
+   }
+
+   .categories-list_income {
+      background-color: #fff;
+      opacity: 0.7;
+      border-radius: 3px;
+      padding: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      li{
+         color: brown;
+         span{
+            color: blueviolet;
+         }
+      }
+   }
+}

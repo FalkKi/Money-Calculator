@@ -1,0 +1,267 @@
+.home-wrapper {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.home-header {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.home-title {
+   font-size: 32px;
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.home-flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.home-btn {
+   transition: all ease 0.4s;
+   width: 200px;
+   padding: 5px;
+   font-size: 18px;
+   font-weight: 700;
+   background-color: blueviolet;
+   color: aliceblue;
+   border-radius: 3px;
+   margin-bottom: 30px;
+
+   &:hover {
+      background-color: rgb(170, 110, 226);
+   }
+}
+
+.home-wrapper__main {
+   font-size: 18px;
+}
+
+.home-navigator {
+   display: flex;
+
+   div {
+      position: relative;
+
+      &:before {
+         content: '';
+         background-color: rgba(10, 60, 78, 0.75);
+         position: absolute;
+         border-radius: 3px;
+         left: 0;
+         bottom: 3px;
+         width: 100%;
+         height: 8px;
+         z-index: -1;
+         transition: all .3s ease-in-out;
+      }
+
+      &:hover::before {
+         bottom: 0;
+         height: 100%;
+      }
+
+      cursor: pointer;
+   }
+}
+
+.home-amount {
+   font-size: 30px;
+   font-weight: 700;
+   color: aliceblue;
+   margin-bottom: 30px;
+}
+
+.home-diagramm {
+   display: flex;
+   flex-direction: column;
+   margin-top: -150px;
+   z-index: 100;
+   justify-content: space-between;
+
+   canvas {
+      margin-left: auto;
+      margin-right: auto;
+      width: 600px;
+      height: 600px;
+   }
+}
+
+.categories-list {
+   width: 300px;
+   margin-top: -330px;
+   margin-bottom: 50px;
+   transform: translateX(0);
+   background: rgb(17, 17, 45);
+   border-radius: 3px;
+   padding: 5px;
+
+   li {
+      margin-bottom: 7px;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: rgb(217, 121, 182);
+
+   }
+
+   span {
+      color: aliceblue;
+   }
+}
+
+.categories-list__active {
+   transform: translateX(-200%);
+}
+
+.calendar {
+   display: inline-block;
+   width: 150px;
+   position: absolute;
+   right: 10;
+   top: 10;
+   margin: 30px 30px 0 0;
+}
+
+.react-datepicker-wrapper {
+   width: 150px;
+}
+
+.picker {
+   width: 130px;
+   transition: all 0.4s;
+   padding: 5px;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 700;
+   border-radius: 4px;
+   cursor: pointer;
+
+   &:hover {
+      background-color: deepskyblue;
+      color: azure;
+   }
+}
+
+@media (max-width: 1175px) {
+   .home-diagramm {
+      align-items: center;
+      text-align: center;
+
+      canvas {
+         margin-left: auto;
+         margin-right: auto;
+         min-width: 500px;
+         min-height: 500px;
+      }
+   }
+
+   .categories-list {
+      margin-top: 20px;
+      background-color: #fff;
+      opacity: 0.7;
+      border-radius: 3px;
+      padding: 5px;
+
+      li {
+         color: rgb(219, 23, 75);
+
+         span {
+            color: rgb(13, 14, 56);
+         }
+      }
+   }
+
+   .home-btn {
+      width: 150px;
+   }
+
+   .home-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 10px;
+   }
+
+   .home-navigator_route {
+      font-weight: 400;
+   }
+
+   .picker {
+      width: 130px;
+      font-size: 14px;
+   }
+}
+
+@media (max-width: 967.98px) {
+
+   .home-diagramm {
+      margin-top: -20px;
+   }
+
+   .categories-list {
+      margin-bottom: 30px;
+
+      li {
+         span {
+            color: rgb(13, 14, 56);
+         }
+      }
+   }
+
+   .info-container {
+      display: flex;
+   }
+}
+
+@media(max-width: 767px) {
+
+   .home-diagramm {
+      margin-top: 30px;
+      align-items: center;
+      text-align: center;
+
+      canvas {
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 400px;
+         max-height: 400px;
+      }
+   }
+
+   .info-container {
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media(max-width: 530px) {
+   .home-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 15px;
+   }
+
+   .home-amount {
+      font-size: 20px;
+      margin-bottom: 20px;
+   }
+
+   .home-diagramm {
+      display: flex;
+      align-items: center;
+
+      canvas {
+         max-width: 200px;
+         max-height: 200px;
+      }
+   }
+
+
+}
